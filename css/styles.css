@@ -191,15 +191,14 @@ img {
   display: inline-block;
   margin-bottom: 16px;
 }
-.footer-items {
-  max-width: 264px;
-}
 
 .footer-logo {
   color: var(--secondary-background-color);
 }
 
 .footer-text {
+  max-width: 264px;
+
   color: var(--secondary-background-color);
 }
 /*#endregion RegionName*/
@@ -401,11 +400,11 @@ img {
 .products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 
 .products-item {
-  flex-basis: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .products-link {
