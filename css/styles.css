@@ -187,6 +187,9 @@ img {
   padding-bottom: 100px;
 }
 
+.footer .container {
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -354,6 +357,9 @@ img {
 .products {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.products .container {
+  border: 1px solid #e7e9fc;
 }
 
 .filter-list {
