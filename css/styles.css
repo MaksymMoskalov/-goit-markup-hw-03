@@ -200,6 +200,12 @@ img {
   max-width: 264px;
 
   color: var(--secondary-background-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 /*#endregion RegionName*/
 
@@ -405,13 +411,10 @@ img {
 
 .products-link {
   display: block;
-  box-sizing: border-box;
-  border: 1px solid #e7e9fc;
 }
 
 .products-link:hover,
-:focus {
-  border: 1px solid #f4f4fd;
+.products-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
