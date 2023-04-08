@@ -38,6 +38,10 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -84,6 +88,11 @@ ul {
 
 /* Header */
 /*#region RegionName*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -202,7 +211,7 @@ ul {
   text-align: center;
 }
 
-.hero .container {
+.hero {
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -221,9 +230,13 @@ ul {
   color: var(--main-background-color);
 }
 .hero-btn {
-  border: 1px solid transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 32px;
-  width: 196px;
+  min-width: 196px;
+  height: 56px;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -249,7 +262,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.provide .container {
+.provide {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -272,13 +285,16 @@ ul {
 
 /* What are we doing section */
 /*#region RegionName*/
+.doing {
+  padding-bottom: 120px;
+}
+
 .doing .main-titles {
   margin-bottom: 72px;
 }
 
 .doing-list {
   display: flex;
-  padding-bottom: 120px;
 }
 .doing-item:not(:last-child) {
   margin-right: 24px;
