@@ -187,9 +187,6 @@ img {
   padding-bottom: 100px;
 }
 
-.footer .container {
-}
-
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -358,9 +355,6 @@ img {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.products .container {
-  border: 1px solid #e7e9fc;
-}
 
 .filter-list {
   display: flex;
@@ -368,10 +362,6 @@ img {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-}
-
-.products-box {
-  padding: 32px 16px;
 }
 
 .products-box .secondary-titles {
@@ -428,6 +418,11 @@ img {
 
 .products-img {
   display: block;
+}
+
+.products-box {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .prducts-text {
