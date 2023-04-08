@@ -15,8 +15,32 @@
     text-decoration: none;
 }
 
-.logic-title {
-    display: none;
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+} 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
 }
 
 
@@ -54,19 +78,37 @@ body {
   color: var(--acsent-color);
 }
 
+.header-nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 76px;
+}
+
 .header-logo {
     color: var(--secondary-text-color);
 }
 
 .nav-list {
-    
+    display: flex;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
+
+.nav-item:not(:last-child){
+    margin-right: 40px;
+}
+
 .nav-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--secondary-text-color);
     
 }
@@ -76,9 +118,17 @@ body {
 }
 
 .address{
+    margin-left: auto;
     font-style: normal;
 }
+
+.address-item:not(:last-child){
+    margin-right: 40px;
+}
+
 .address-list{
+    display: flex;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -86,12 +136,20 @@ body {
     font-style: normal;
 }
 .address-link{
+    display: block;
+    padding-top: 24px;
+     padding-bottom: 24px;
     color: var(--main-text-color);
 }
 
 .address-link:hover, 
 .address-link:focus{
     color: var(--active-color);
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
 }
 
 /* Footer */
@@ -110,8 +168,19 @@ body {
 /* Hero section */
 .hero{
     background-color: var(--acsent-background-color);
+    text-align: center;
 }
+
+.hero .container{
+    
+}
+
 .hero-title {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -120,6 +189,12 @@ body {
     color: var(--main-background-color);
 }
 .hero-btn{
+    border: 1px solid transparent;
+    padding: 16px 32px;
+    width: 196px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -139,6 +214,24 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.provide .container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.provide-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.provide-item{
+    flex-basis: calc((100% - 24px) / 4);
+}
+
+.provide-item .secondary-titles{
+    margin-bottom: 8px;
 }
 
 
